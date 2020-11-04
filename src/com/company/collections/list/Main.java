@@ -2,12 +2,24 @@ package com.company.collections.list;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
         ArrayList<Car> list = new ArrayList<>();
+        LinkedList<Car> linkedList = new LinkedList<>();
+        linkedList.add(new Car("asf"));
+        // [A, B, C] -> Node(A), Node(B), Node(C)
+        // Node(A) -
+        //         prev = null
+        //         next = Node(B)
+
+        // Node(A) -
+        //         prev = Node(A)
+        //         next = Node(C)
+
         list.add(new Car("fasf")); //[A]
         list.add(new Car("fasf")); //[A, B]
         list.add(new Car("Audi")); //[A, B, C]
