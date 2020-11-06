@@ -19,7 +19,7 @@ public class Main {
         List<Test> tests = new ArrayList<>();
 //ошибка компилятора!
         iterateAnimals(cats);
-        iterateAnimals(tests);
+//        iterateAnimals(tests);
     }
 
 }
