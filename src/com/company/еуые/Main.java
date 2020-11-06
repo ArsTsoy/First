@@ -2,6 +2,7 @@ package com.company.еуые;
 
 import com.company.Animal;
 import com.company.Cat;
+import com.company.Test;
 
 
 import java.util.ArrayList;
@@ -10,27 +11,15 @@ import java.util.List;
 
 public class Main {
 
-    public static void iterateAnimals(List<? super Animal> animals) {
-
-
-//        for(Animal animal: animals) {
-//
-//            System.out.println("Еще один шаг в цикле пройден!");
-//        }
+    public static void iterateAnimals(Collection<? extends Animal> animals) {
     }
 
     public static void main(String[] args) {
-
-
         List<Cat> cats = new ArrayList<>();
-        cats.add(new Cat());
-        cats.add(new Cat());
-        cats.add(new Cat());
-        cats.add(new Cat());
-
-
+        List<Test> tests = new ArrayList<>();
 //ошибка компилятора!
-
-//        iterateAnimals(cats);
+        iterateAnimals(cats);
+        iterateAnimals(tests);
     }
+
 }

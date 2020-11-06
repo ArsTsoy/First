@@ -14,6 +14,9 @@ public class Main {
         map.put("key4", "value4");
         map.put("key5", "value5");
         map.put("key6", "value6");
+        map.replace("key1", "value2", "value6");
+        map.remove("key1");
+        map.remove("key1", "value2");
 //        System.out.println(map);
 
         // 1-ый способ
@@ -38,9 +41,9 @@ public class Main {
 //        }
 //
 //        // 4-ый способ
-//        for(String key: map.keySet()) {
-//            System.out.println(key + ": " + map.get(key));
-//        }
+        for(String key: map.keySet()) {
+            System.out.println(key + ": " + map.get(key));
+        }
 
 
     }
