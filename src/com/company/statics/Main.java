@@ -8,7 +8,7 @@ public class Main {
         obj1.staticInt = 1;
 
         SomeClass.staticInt = 10;
-        SomeClass.nonStaticInt = 10;
+//        SomeClass.nonStaticInt = 10;
 
         SomeClass.someMethod();
 

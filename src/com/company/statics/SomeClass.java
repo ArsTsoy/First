@@ -6,7 +6,7 @@ public class SomeClass {
     public int nonStaticInt;
 
     static void someMethod() {
-        nonStaticInt = 10;
+//        nonStaticInt = 10;
         staticInt = 10;
     }
 
