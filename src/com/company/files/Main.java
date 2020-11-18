@@ -31,30 +31,32 @@ public class Main {
 //                }
 //            }
 //        }
-//
-//        // Закрывать потоки с помощью try catch with resources
-//        try (FileReader fileReader = new FileReader("src/com/company/files/text.txt")) {
-//            int character = fileReader.read();
-//            while (character != -1) {
-//                System.out.print((char) character);
-//                character = fileReader.read();
-//            }
-//
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
 
-//        try(
-//                FileWriter fileWriter = new FileWriter("src/com/company/files/text2.txt", true);
-//                ) {
-//            String myString = "Hello, Elisey!";
-//            fileWriter.write(myString);
-//
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+//        Считать текст с файла text1.txt и записать этот текст в  text2.text
+
+        // Закрывать потоки с помощью try catch with resources
+        try (FileReader fileReader = new FileReader("src/com/company/files/text.txt")) {
+            int character = fileReader.read();
+            while (character != -1) {
+                System.out.print((char) character);
+                character = fileReader.read();
+            }
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try(
+                FileWriter fileWriter = new FileWriter("src/com/company/files/text2.txt", true);
+                ) {
+            String myString = "Hello, Elisey!";
+            fileWriter.write(myString);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
 //        try(
 //                FileReader fileReader = new FileReader("src/com/company/files/text.txt");
