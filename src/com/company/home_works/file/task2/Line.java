@@ -1,4 +1,4 @@
-package com.company.home_works.file;
+package com.company.home_works.file.task2;
 
 public class Line {
 
